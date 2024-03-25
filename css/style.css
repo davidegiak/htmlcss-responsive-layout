@@ -10,6 +10,10 @@
     padding: 1rem;
 }
 
+.pd-4 {
+    padding: 4rem;
+}
+
 .margin-t2 {
     margin-top: 2rem;
 }
@@ -42,6 +46,10 @@
 
 .bg-blue {
     background-color: rgba(0, 132, 253, 0.5);
+}
+
+.bg-black {
+    background-color: #222;
 }
 
 .color-white {
@@ -78,4 +86,37 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+/************************MEDIA**********************/
+
+@media screen and (min-width: 480px) {
+    .one {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .small {
+        width: 30%;
+    }
+    .big {
+        width: calc(60% + 1rem);
+    }
+    .benefits {
+        width: calc(50% - 1rem);
+    }
+    .about-us {
+        width: calc(50% - 1rem);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .boxed-container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .two {
+        flex-direction: row;
+    }
 }
