@@ -1,0 +1,27 @@
+/********************COMMON******************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pd-1 {
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/*************************HEADER*****************/
+
+.head-menu {
+    background-color: #0084fd;
+    color: white;
+    justify-content: space-between;
+}
