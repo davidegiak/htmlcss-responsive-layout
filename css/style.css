@@ -10,6 +10,18 @@
     padding: 1rem;
 }
 
+.margin-t2 {
+    margin-top: 2rem;
+}
+
+.margin-b1 {
+    margin-bottom: 1rem;
+}
+
+.margin-b2 {
+    margin-bottom: 2rem;
+}
+
 .flex {
     display: flex;
 }
@@ -18,10 +30,52 @@
     width: 100%;
 }
 
+/***************************COLORS*****************/
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-purp {
+    background-color: #9593e6;
+}
+
+.bg-blue {
+    background-color: rgba(0, 132, 253, 0.5);
+}
+
+.color-white {
+    color: white;
+}
+
+.color-purp {
+    color: #9593e6;
+}
+
 /*************************HEADER*****************/
 
 .head-menu {
+    position: fixed;
     background-color: #0084fd;
     color: white;
     justify-content: space-between;
+}
+
+/**************************MAIN*****************/
+
+main {
+    padding-top: 5rem;
+}
+
+.boxed-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
