@@ -7,6 +7,10 @@
     font-family: sans-serif;
 }
 
+.pd-05 {
+    padding: 0.5rem;
+}
+
 .pd-1 {
     padding: 1rem;
 }
@@ -27,20 +31,49 @@
     margin-bottom: 2rem;
 }
 
+.gap-1 {
+    gap: 1rem;
+}
+
 .flex {
     display: flex;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-50 {
+    width: 50%;
 }
 
 .w-100 {
     width: 100%;
 }
 
+.w-cont {
+    width: fit-content;
+}
+
+.b-rad {
+    border-radius: 50%;
+
+}
+
 .txt-center {
     text-align: center;
 }
 
+.line_1-5 {
+    line-height: 1.5rem;
+}
+
 .center {
     justify-content: center;
+    align-items: center;
+}
+
+.al-center {
     align-items: center;
 }
 
@@ -89,6 +122,7 @@
     background-color: #0084fd;
     color: white;
     justify-content: space-between;
+    z-index: 999;
 }
 
 /**************************MAIN*****************/
@@ -99,7 +133,6 @@ main {
 
 .boxed-container {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -107,17 +140,21 @@ main {
     flex-direction: column;
     gap: 1rem;
     border-radius: 20px;
+    width: 90%;
 }
 
 .left {
     flex-direction: column;
 }
 
+.right {
+    transform: translateY(1rem);
+}
+
 .button {
     text-decoration: none;
     text-align: center;
     border-radius: 50px;
-    width: 50%;
 }
 
 .icon {
@@ -128,6 +165,14 @@ main {
     font-size: 2.5rem;
 }
 
+.testimonial {
+    width: 30%;
+    flex-direction: column;
+}
+
+.test-img {
+    height: 100px;
+}
 
 
 /************************MEDIA**********************/
@@ -150,6 +195,21 @@ main {
     .about-us {
         width: calc(50% - 1rem);
     }
+    .testimonial {
+        width: 24%;
+    }
+    .testimonial-caption {
+        width: 50%;
+        text-align: left;
+    }
+    .test-img {
+        height: 125px;
+    }
+    .row {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
 
 }
 
@@ -166,5 +226,17 @@ main {
     }
     .big {
         flex-direction: row;
+    }
+    .left {
+        width: calc(45% - 1rem);
+    }
+    .right {
+        width: calc(36% - 1rem);
+    }
+    .testimonial {
+        width: 20%;
+    }
+    .test-img {
+        height: 194px;
     }
 }
