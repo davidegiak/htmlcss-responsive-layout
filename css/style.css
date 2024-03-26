@@ -77,6 +77,10 @@
     align-items: center;
 }
 
+li {
+    list-style: none;
+}
+
 /***************************COLORS*****************/
 
 .bg-white {
@@ -123,6 +127,14 @@
     color: white;
     justify-content: space-between;
     z-index: 999;
+}
+
+.menu {
+    display: none;
+}
+
+.ul-menu {
+    gap: 1rem;
 }
 
 /**************************MAIN*****************/
@@ -220,6 +232,7 @@ main {
     }
     .two {
         flex-direction: row;
+        justify-content: space-evenly;
     }
     .button {
         width: 30%;
@@ -238,5 +251,18 @@ main {
     }
     .test-img {
         height: 194px;
+    }
+    .card-one {
+        width: 45%;
+    }
+    .card-second {
+        width: 30%;
+        transform: translateY(2rem);
+    }
+    .hamb {
+        display: none;
+    }
+    .menu {
+        display: block;
     }
 }
