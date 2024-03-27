@@ -7,6 +7,10 @@
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .pd-05 {
     padding: 0.5rem;
 }
@@ -107,6 +111,10 @@ li {
     color: white;
 }
 
+.color-black {
+    color: #222;
+}
+
 .color-purp {
     color: #9593e6;
 }
@@ -135,6 +143,11 @@ li {
 
 .ul-menu {
     gap: 1rem;
+}
+
+.head-btn {
+    border-radius: 10px;
+    padding: 0.1rem 0.5rem;
 }
 
 /**************************MAIN*****************/
@@ -183,21 +196,30 @@ main {
 }
 
 .test-img {
-    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.p-testimonial::before {
+    content: url(../img/icons8-quote-left-20.png);
+}
+
+.p-testimonial::after {
+    content: url(../img/icons8-get-quote-20.png);
 }
 
 
 
 /************************MEDIA**********************/
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
     .one {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1rem;
     }
     .small {
-        width: 30%;
+        width: calc(30% + 0.3rem);
     }
     .big {
         width: calc(60% + 1rem);
@@ -209,14 +231,11 @@ main {
         width: calc(50% - 1rem);
     }
     .testimonial {
-        width: 24%;
+        width: 30%;
     }
     .testimonial-caption {
         width: 50%;
         text-align: left;
-    }
-    .test-img {
-        height: 125px;
     }
     .row {
         flex-direction: row;
@@ -226,7 +245,7 @@ main {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     .boxed-container {
         width: 1200px;
         margin: 0 auto;
@@ -248,10 +267,7 @@ main {
         width: calc(36% - 1rem);
     }
     .testimonial {
-        width: 20%;
-    }
-    .test-img {
-        height: 194px;
+        max-width: 10rem;
     }
     .card-one {
         width: 45%;
